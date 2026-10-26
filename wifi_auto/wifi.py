@@ -30,9 +30,9 @@ if auth_type != "None (Open)":
 
     col_cfg1, col_cfg2 = st.columns(2)
     with col_cfg1:
-        test_range = st.number_input("Attempts Count", min_value=1, max_value=500, value=3000, step=1)
+        test_range = st.number_input("Attempts Count", min_value=1, max_value=5000, value=1, step=1)
     with col_cfg2:
-        step_delay = st.number_input("Wait per attempt (sec)", min_value=2, max_value=10, value=4, step=1)
+        step_delay = st.number_input("Wait per attempt (sec)", min_value=0, max_value=100, value=5, step=1)
 
     p1 = pwd_part1.strip()
     p2 = pwd_part2.strip()
